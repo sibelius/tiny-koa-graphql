@@ -1,0 +1,42 @@
+{
+  "name": "tiny-koa-graphql",
+  "version": "1.0.0",
+  "dependencies": {
+    "graphql": "15.3.0",
+    "graphql-playground-middleware": "^1.1.2",
+    "koa": "2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-convert": "^2.0.0",
+    "koa-cors": "^0.0.16",
+    "koa-graphql": "^0.8.0",
+    "koa-router": "9.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.12.1",
+    "@babel/core": "7.12.1",
+    "@babel/node": "7.12.1",
+    "@babel/plugin-proposal-async-generator-functions": "7.12.1",
+    "@babel/plugin-proposal-class-properties": "7.12.1",
+    "@babel/plugin-proposal-export-default-from": "7.12.1",
+    "@babel/plugin-proposal-export-namespace-from": "7.12.1",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "7.12.1",
+    "@babel/plugin-proposal-optional-chaining": "7.12.1",
+    "@babel/plugin-transform-async-to-generator": "7.12.1",
+    "@babel/preset-env": "7.12.1",
+    "@babel/preset-typescript": "7.12.1",
+    "babel-loader": "8.0.6",
+    "clean-webpack-plugin": "3.0.0",
+    "reload-server-webpack-plugin": "1.0.1",
+    "webpack": "4.39.1",
+    "webpack-cli": "3.3.9",
+    "webpack-dev-server": "3.9.0",
+    "webpack-merge": "4.2.2",
+    "webpack-node-externals": "1.7.2"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --watch --progress --config webpack.js"
+  }
+}
