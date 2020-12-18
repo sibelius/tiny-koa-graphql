@@ -29,7 +29,7 @@
     "clean-webpack-plugin": "3.0.0",
     "reload-server-webpack-plugin": "1.0.1",
     "webpack": "4.39.1",
-    "webpack-cli": "3.3.9",
+    "webpack-cli": "4.2.0",
     "webpack-dev-server": "3.9.0",
     "webpack-merge": "4.2.2",
     "webpack-node-externals": "1.7.2"
