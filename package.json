@@ -30,7 +30,7 @@
     "reload-server-webpack-plugin": "1.0.1",
     "webpack": "4.44.2",
     "webpack-cli": "4.2.0",
-    "webpack-dev-server": "3.9.0",
+    "webpack-dev-server": "3.11.0",
     "webpack-merge": "5.7.2",
     "webpack-node-externals": "2.5.2"
   },
