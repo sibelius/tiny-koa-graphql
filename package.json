@@ -2,7 +2,7 @@
   "name": "tiny-koa-graphql",
   "version": "1.0.0",
   "dependencies": {
-    "graphql": "15.4.0",
+    "graphql": "15.5.0",
     "graphql-playground-middleware": "^1.1.2",
     "koa": "2.13.1",
     "koa-bodyparser": "^4.3.0",
