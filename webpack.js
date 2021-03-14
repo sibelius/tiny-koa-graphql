@@ -3,13 +3,13 @@ const path = require('path');
 const webpack = require('webpack');
 
 const WebpackNodeExternals = require('webpack-node-externals');
-const ReloadServerPlugin = require('reload-server-webpack-plugin');
+const ReloadServerPlugin = require('./webpack/ReloadServerPlugin');
 
 const cwd = process.cwd();
 
 module.exports = {
   mode: 'development',
-  devtool: 'cheap-eval-source-map',
+  devtool: 'eval-cheap-source-map',
   entry: {
     server: [
       './src/index.ts',
@@ -18,17 +18,14 @@ module.exports = {
   output: {
     path: path.resolve('build'),
     filename: 'graphql.js',
-    futureEmitAssets: true,
   },
-  watch: true,
   target: 'node',
   node: {
-    fs: true,
     __dirname: true,
   },
   externals: [
     WebpackNodeExternals({
-      whitelist: ['webpack/hot/poll?1000'],
+      allowlist: ['webpack/hot/poll?1000'],
     }),
   ],
   resolve: {
@@ -47,11 +44,6 @@ module.exports = {
           loader: 'babel-loader?cacheDirectory',
         },
         exclude: [/node_modules/],
-        include: [path.join(cwd, 'src'), path.join(cwd, '../')],
-      },
-      {
-        test: /\.(pem)?$/,
-        loaders: ['raw-loader'],
       },
     ],
   },
