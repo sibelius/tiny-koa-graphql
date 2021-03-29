@@ -1208,15 +1208,15 @@
   dependencies:
     source-map "^0.6.1"
 
-"@types/webpack-dev-server@3.11.2":
-  version "3.11.2"
-  resolved "https://registry.yarnpkg.com/@types/webpack-dev-server/-/webpack-dev-server-3.11.2.tgz#73915a7d9e0a9b5e010a2388a46f68ab3f770ef8"
-  integrity sha512-13w1VhaghN+G1rYjkBPgN/GFRoHd9uI2fwK9cSKvLutdmZ22L9iicFEvt69by40DP2I6uNcClaGTyPY6nYhIgQ==
+"@types/webpack-dev-server@3.11.3":
+  version "3.11.3"
+  resolved "https://registry.yarnpkg.com/@types/webpack-dev-server/-/webpack-dev-server-3.11.3.tgz#237e26d87651cf95490dcd356f568c8c84016177"
+  integrity sha512-p9B/QClflreKDeamKhBwuo5zqtI++wwb9QNG/CdIZUFtHvtaq0dWVgbtV7iMl4Sr4vWzEFj0rn16pgUFANjLPA==
   dependencies:
     "@types/connect-history-api-fallback" "*"
     "@types/express" "*"
     "@types/serve-static" "*"
-    "@types/webpack" "*"
+    "@types/webpack" "^4"
     http-proxy-middleware "^1.0.0"
 
 "@types/webpack-node-externals@2.5.1":
@@ -1235,7 +1235,7 @@
     "@types/source-list-map" "*"
     source-map "^0.7.3"
 
-"@types/webpack@*", "@types/webpack@^4", "@types/webpack@^4.4.31":
+"@types/webpack@^4", "@types/webpack@^4.4.31":
   version "4.41.27"
   resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.41.27.tgz#f47da488c8037e7f1b2dbf2714fbbacb61ec0ffc"
   integrity sha512-wK/oi5gcHi72VMTbOaQ70VcDxSQ1uX8S2tukBK9ARuGXrYM/+u4ou73roc7trXDNmCxCoerE8zruQqX/wuHszA==
