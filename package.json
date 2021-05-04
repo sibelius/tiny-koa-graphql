@@ -23,7 +23,7 @@
     "@babel/plugin-proposal-object-rest-spread": "7.13.8",
     "@babel/plugin-proposal-optional-chaining": "7.13.12",
     "@babel/plugin-transform-async-to-generator": "7.13.0",
-    "@babel/preset-env": "7.13.15",
+    "@babel/preset-env": "7.14.1",
     "@babel/preset-typescript": "7.13.0",
     "@types/babel__core": "7.1.14",
     "@types/babel__preset-env": "7.9.1",
