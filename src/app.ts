@@ -4,7 +4,7 @@ import bodyParser from "koa-bodyparser";
 import convert from "koa-convert";
 import cors from "koa-cors";
 import { koaPlayground } from "graphql-playground-middleware";
-import graphqlHttp from "koa-graphql";
+import { graphqlHTTP } from "koa-graphql";
 import { config } from "./config";
 import { schema } from "./schema/schema";
 
@@ -37,7 +37,7 @@ router.all(
 );
 
 const appGraphQL = convert(
-  graphqlHttp(async (request: Request, ctx: Response, koaContext) => {
+  graphqlHTTP(async (request: Request, ctx: Response, koaContext) => {
     return {
       graphiql: config.NODE_ENV !== "production",
       schema,
