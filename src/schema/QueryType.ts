@@ -1,6 +1,6 @@
 import { GraphQLObjectType, GraphQLString } from 'graphql';
 
-import { version } from '../../package.json';
+import pkg from '../../package.json';
 import { GraphQLContext } from '../types';
 
 export const QueryType = new GraphQLObjectType<
@@ -11,7 +11,7 @@ export const QueryType = new GraphQLObjectType<
   fields: () => ({
     version: {
       type: GraphQLString,
-      resolve: () => version,
+      resolve: () => pkg.version,
     },
   }),
 });
