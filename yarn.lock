@@ -1486,7 +1486,7 @@ ansi-styles@^3.2.0, ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
-any-promise@^1.0.0, any-promise@^1.1.0:
+any-promise@^1.0.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/any-promise/-/any-promise-1.3.0.tgz#abc6afeedcea52e809cdc0376aed3ce39635d17f"
   integrity sha1-q8av7tzqUugJzcA3au0845Y10X8=
@@ -2078,19 +2078,12 @@ debug@^3.1.1, debug@^3.2.6:
   dependencies:
     ms "^2.1.1"
 
-debug@^4.1.0, debug@^4.1.1:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.2.0.tgz#7f150f93920e94c58f5574c2fd01a3110effe7f1"
-  integrity sha512-IX2ncY78vDTjZMFUdmsvIRFY2Cf4FnD0wRs+nQwJU8Lu99/tPFdb0VybiiMTPe3I6rQmwsqQqRBvxU+bZ/I8sg==
+debug@^4.1.0, debug@^4.1.1, debug@^4.3.2:
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.3.tgz#04266e0b70a98d4462e6e288e38259213332b664"
+  integrity sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==
   dependencies:
     ms "2.1.2"
-
-debug@~3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
-  integrity sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
-  dependencies:
-    ms "2.0.0"
 
 decamelize@^1.2.0:
   version "1.2.0"
@@ -3322,25 +3315,10 @@ koa-bodyparser@^4.3.0:
     co-body "^6.0.0"
     copy-to "^2.0.1"
 
-koa-compose@^3.0.0:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/koa-compose/-/koa-compose-3.2.1.tgz#a85ccb40b7d986d8e5a345b3a1ace8eabcf54de7"
-  integrity sha1-qFzLQLfZhtjlo0Wzoazo6rz1Tec=
-  dependencies:
-    any-promise "^1.1.0"
-
 koa-compose@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/koa-compose/-/koa-compose-4.1.0.tgz#507306b9371901db41121c812e923d0d67d3e877"
   integrity sha512-8ODW8TrDuMYvXRwra/Kh7/rJo9BtOfPc6qO8eAfC80CnCvSjSl0bkRM24X6/XBBEyj0v1nRUQ1LyOy3dbqOWXw==
-
-koa-convert@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/koa-convert/-/koa-convert-1.2.0.tgz#da40875df49de0539098d1700b50820cebcd21d0"
-  integrity sha1-2kCHXfSd4FOQmNFwC1CCDOvNIdA=
-  dependencies:
-    co "^4.6.0"
-    koa-compose "^3.0.0"
 
 koa-convert@^2.0.0:
   version "2.0.0"
@@ -3376,17 +3354,17 @@ koa-router@10.0.0:
     methods "^1.1.2"
     path-to-regexp "^6.1.0"
 
-koa@2.13.1:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/koa/-/koa-2.13.1.tgz#6275172875b27bcfe1d454356a5b6b9f5a9b1051"
-  integrity sha512-Lb2Dloc72auj5vK4X4qqL7B5jyDPQaZucc9sR/71byg7ryoD1NCaCm63CShk9ID9quQvDEi1bGR/iGjCG7As3w==
+koa@2.13.4:
+  version "2.13.4"
+  resolved "https://registry.yarnpkg.com/koa/-/koa-2.13.4.tgz#ee5b0cb39e0b8069c38d115139c774833d32462e"
+  integrity sha512-43zkIKubNbnrULWlHdN5h1g3SEKXOEzoAlRsHOTFpnlDu8JlAOZSMJBLULusuXRequboiwJcj5vtYXKB3k7+2g==
   dependencies:
     accepts "^1.3.5"
     cache-content-type "^1.0.0"
     content-disposition "~0.5.2"
     content-type "^1.0.4"
     cookies "~0.8.0"
-    debug "~3.1.0"
+    debug "^4.3.2"
     delegates "^1.0.0"
     depd "^2.0.0"
     destroy "^1.0.4"
@@ -3397,7 +3375,7 @@ koa@2.13.1:
     http-errors "^1.6.3"
     is-generator-function "^1.0.7"
     koa-compose "^4.1.0"
-    koa-convert "^1.2.0"
+    koa-convert "^2.0.0"
     on-finished "^2.3.0"
     only "~0.0.2"
     parseurl "^1.3.2"
